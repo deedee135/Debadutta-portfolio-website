@@ -4,7 +4,16 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Debadutta Sahoo UI/UX designer</title>
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,500;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+
 </head>
 <!--End of head section-->
 <!--Start of Body Section-->
@@ -14,7 +23,7 @@
   <header>
     <div>
       <a href="index.html">
-        <img src="img/Logo.png" alt="Debadutta" width="82" height="53">
+        <img id="logo" src="img/logo.svg" alt="Debadutta">
       </a>
       <nav>
         <ul>
@@ -30,8 +39,8 @@
     <!--Start of hero-->
     <div>
       <div>
-        <img src="img/Name@2x.png" alt="My Name" width="358" height="600">
-        <p>I am an UI/UX designer, a problem solver who cares about designing products which are easy to use and aesthetically pleasant.</p>
+        <img src="img/Name@2x.png" alt="My Name">
+        <h3>I am an UI/UX designer, a problem solver who cares about designing products which are easy to use and aesthetically pleasant.</h3>
       </div>
     </div>
     <!--end of hero-->
@@ -40,26 +49,24 @@
       <!--Start orange-->
       <div>
         <!--start yellow-->
-        <h3>
-          <!--My work-->
-          My Work
-        </h3>
+        <h2 style="color:#720B98;">My Work
+        </h2>
         <div>
           <!--start green-->
           <div>
             <!--image column-->
             <picture>
               <source srcset="img/Health_savvy/Health_Savvy_Project@1x.jpg" media="(max-width:750px)">
-              <img src="img/Health_savvy/Health_Savvy_Project@2x.jpg" alt="My Image" height="742" width="1110">
+              <img src="img/Health_savvy/Health_Savvy_Project@2x.jpg" alt="My Image">
             </picture>
           </div>
           <!--end of image column-->
           <div>
             <!--start project detail column-->
-            <h3>Health Savvy</h3>
+            <h3 style="color:#720B98;">Health Savvy</h3>
             <p>Health Savvy is a responsive healthy Recipe and meal planning Web App.</p>
             <p>Tools Used : Sketch and Invision</p>
-            <a href="Health_savvy.html">View Project</a>
+            <a href="Health_savvy.html" class="button">VIEW PROJECT</a>
           </div><!-- end of project detail column-->
         </div>
         <!--end of green-->
@@ -69,16 +76,16 @@
             <!--image column-->
             <picture>
               <source srcset="img/Price_Pixel/PricePixel_Project@1x.jpg" media="(max-width:750px)">
-              <img src="img/Price_Pixel/PricePixel_Project@2x.jpg" height="742" width="1110" alt="Image">
+              <img src="img/Price_Pixel/PricePixel_Project@2x.jpg" alt="Image">
             </picture>
           </div>
           <!--end of image column-->
           <div>
             <!--start project detail column-->
-            <h3>Price Pixel</h3>
+            <h3 style="color:#720B98;">Price Pixel</h3>
             <p>Pricepixel is a responsive web and mobile app for tracking price of various products and purchase the product at correct price.</p>
             <p>Tools Used : Sketch and Invision</p>
-            <button type="button">View Project</button>
+            <a href="#" class="button">VIEW PROJECT</a>
           </div><!-- end of project detail column-->
         </div>
         <!--end of green-->
@@ -91,9 +98,11 @@
   <!--start of footer-->
   <footer id="contact">
     <div>
-      <h2>Get in Touch</h2>
-      <p>I am happy to connect. I am available for full-time or contract roles.</P>
-      <button type="button">Send Email</button>
+      <h2 style="color:#720B98;">Get in Touch</h2>
+      <p>I am happy to connect. I am available for full-time or contract roles. Call: <a href="tel:+17045757238"
+          id="phone">704-575-7238.</a> Prefer sending an email?</p>
+
+      <a href="#" class="button">SEND EMAIL</a>
       <div>
 
         <a href="#">

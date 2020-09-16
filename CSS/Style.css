@@ -1,0 +1,78 @@
+/*
+Colors used:
+Primary Color (Purple): #720B98;
+Secondary Color (Mortar): #4E4351;
+Highlight Color (TuTu): #FFEDFF
+Base White (White): #FFFFFF
+Base Black (Black): #000000
+
+
+font-family: 'Montserrat', sans-serif;
+*/
+
+body {
+  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #504252;
+}
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2.00em;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.33em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+img {
+  width: 100%;
+}
+img.auto {
+  width: auto;
+}
+#logo {
+  width: 82px;
+  height: 53px;
+}
+a {
+color: #720B98;
+text-decoration: none; /* No underlining */
+}
+a:visited { /* visited link */
+  color: #720B98;
+}
+a:hover,
+a:focus{
+color: #9A50F4;
+text-decoration: none; /* Underlining when hovering over a link */
+}
+a:active { /* selected link */
+  color: #9A50F4;
+}
+
+.button{display: inline-block; background-color: transparent;
+  border: 1px solid #720B98;
+  border-radius: 25px;
+  padding: 11px 80px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+
+}
+.button:hover{background-color: #720B98; /* Green */
+  color: white;}
