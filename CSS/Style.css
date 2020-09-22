@@ -19,7 +19,8 @@ main{
 
 
 
-header {background-color: FFEDFF;
+header {
+  background-color: FFEDFF;
 padding:7px 0;
 position: relative;
 }
@@ -32,18 +33,26 @@ body {
   line-height: 1.6;
   color: #504252;
 }
+footer {
+  text-align: center;
+  padding: 12px 0;
+  margin: 12px;
+}
 
 .home {
   background-color: #ffffff;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
-.masterhead{
+#hero{
+  text-align: center;
   padding-bottom: 70px;
 }
+
 .center {
   text-align: center;
 }
 .container {
+  text-align: left;
   padding: 0 15px;
   max-width: 1200px;
 }
@@ -66,16 +75,11 @@ nav > ul > li {
 }
 nav > ul > li > a {
 
-  padding: 0 7px;
+  padding: 0 6px;
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 700;
   color: #ffedff;
-}
-nav {
-  width: auto;
-  float: right;
-  margin-top: 4px;
 }
 nav>ul>li>a:visited {
   color: #4E4351;
@@ -131,10 +135,10 @@ h4 {
   color: #720B98;
   font-size: 1.8em;
   font-weight: 500;
-  border-bottom: 5px solid #4E4351;
+  border-bottom: 6px solid #4E4351;
   text-align: center;
-  padding-bottom: 20px;
-  width: 70%;
+  padding-bottom: 10px;
+  width: 60%;
 }
 #work h4{
   font-size: 1.5em;
@@ -157,7 +161,7 @@ img.auto {
 #logo {
   width: 82px;
   height: 53px;
-  margin-left: 10px;
+  padding: 0 15px;
 }
 a {
 color: #720B98;
@@ -182,7 +186,7 @@ a:active { /* selected link */
 .button{display: inline-block; background-color: transparent;
   border: 1px solid #720B98;
   border-radius: 25px;
-  padding: 11px 80px;
+  padding: 10px 80px;
   text-align: center;
   font-size: 13px;
   font-weight: 500;
