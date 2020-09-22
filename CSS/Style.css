@@ -35,6 +35,14 @@ footer {
   padding: 12px 0;
   margin: 12px;
 }
+.border {
+  border-top:1px solid rgba(125,0,158,.5);
+width: 70%;
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
 
 .home {
   background-color: #ffffff;
@@ -200,5 +208,5 @@ a:active { /* selected link */
   width: 60%;
   display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
 }
