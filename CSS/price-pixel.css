@@ -1,13 +1,13 @@
 .header-text{
   background: black;
-  border-radius: 41px;
+  border-radius: 30px;
   width 70%
 }
 .header-text-inside{
   box-sizing: border-box;
-  border-radius: 41px;
+  border-radius: 30px;
   border:1px solid #FFB500;
-  transform: translate(10px, 10px);
+  transform: translate(5px, 5px);
   padding: 8px;
 
 }
