@@ -1,6 +1,6 @@
-.title2 h2{
+#title2 h2{
   color: #819900;
-border-left: 7px solid ##819900;
+border-left: 7px solid #819900;
 background: #E9EFC2;
 background-size: cover;
 text-align: center;
@@ -11,16 +11,41 @@ display: block;
   margin-right: auto
 }
 #user_research h4{
+  font-family: Playfair display;
+  font-style: italic;
+  color:#000000;
+  font-weight:600;
   border-left: 5px solid #A4B248;
   padding: 20px;
   width: 40%;
 }
 #title1 h2{
+  color:#819900;
   border-bottom: 7px solid black;
-  text-align: center;
-  padding-bottom: 10px;
-  width: 50%;
-  display: block;
+  padding: 0 10px 10px;
+    text-align: center;
+    display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    width:40;
+}
+#user-Synthesis h2{
+  color: #819900;
+  text-align: left;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+
+.italic-title{
+float: left;
+width:10%;
+
+}
+.description{
+  text-align: left;
+padding-top:5px;
+}
 }
