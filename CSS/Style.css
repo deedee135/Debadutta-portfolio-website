@@ -16,6 +16,7 @@ main {
 }
 
 header {
+
   text-align: unset;
   padding: 7px 0;
   position: fixed;
@@ -24,6 +25,7 @@ header {
   width: 100%;
   box-shadow: 0 12px 12px 0 rgba(0, 0, 0, .2);
 }
+
 
 body {
   background-color: #ffffff;
@@ -55,7 +57,7 @@ footer {
 }
 
 #hero {
-padding-bottom: 60px;
+padding-bottom: 40px;
   background-color: #E0E9F5;
 }
 #hero h2{
@@ -105,9 +107,7 @@ nav>ul {
   padding: 0;
 }
 
-nav>ul>li {
-  display: inline-block;
-}
+
 
 nav>ul>li>a {
   padding: 0 6px;
@@ -128,6 +128,9 @@ nav>ul>li>a:hover {
 nav>ul>li>a:active {
   color: #720B98;
 }
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
 
 nav {
   width: auto;
@@ -135,7 +138,11 @@ nav {
   margin-top: 4px;
 }
 
+#work .pic{
 
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
 
 .col-md-6 h4 {
   color: #720B98;
@@ -369,7 +376,7 @@ a:active {
 }
 
 /* ==============================
-Medium devices (640px and larger)
+small devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
   header {
@@ -378,13 +385,22 @@ Medium devices (640px and larger)
   }
 
   nav {
+
     width: auto;
     float: right margin-top: 4px;
   }
 
+  .navtoggle li:not(:last-child) {
+    display: none;
+  }
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+
   [class*="col-"] {
     float: left;
-    padding: 15px;
+    padding: 25px;
   }
 
   .col-md-6 {
@@ -407,6 +423,9 @@ MediumISH devices (900px and larger)
   .row-skills {
     text-align: center;
   }
+  .navtoggle li:last-child {
+  display: none;
+}
 
   .cols-skills, .cols-tools, .cols-others {
     width: 250px;
@@ -433,12 +452,23 @@ Large devices (1024px or larger)
   .col-lg-4 {
     width: 40%;
   }
+  .navtoggle li:last-child {
+  display: none;
+}
 }
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {}
+@media only screen and (min-width: 1440px) {
+  .navtoggle li:last-child {
+  display: none;
+}
+}
+
+/*================================
+CSS Animation
+======================================*/
 
 @keyframes color-change {
   from {

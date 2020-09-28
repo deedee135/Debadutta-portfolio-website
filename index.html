@@ -12,8 +12,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,500;1,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
-
-
+  <script
+    src="https://kit.fontawesome.com/7a864958f2.js"
+    crossorigin="anonymous"
+  ></script>
 
 </head>
 <!--End of head section-->
@@ -22,6 +24,7 @@
 <body>
   <!-- Start of header-->
     <header class="home" id="home">
+      <div class="navtoggle" id="myNavtoggle">
 
       <a href="index.html">
         <img id="logo" src="img/logo.svg" alt="Debadutta">
@@ -31,6 +34,15 @@
           <li> <a href="index.html">Work</a></li>
           <li> <a href="about.html">About</a></li>
           <li> <a href="#contact">Contact</a></li>
+          <li>
+            <a
+              href="javascript:void(0);"
+              class="icon"
+              onclick="menuToggle()"
+            >
+              <i class="fas fa-bars"></i
+            ></a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -67,7 +79,7 @@
 
         <div  class="row">
           <!--start green-->
-          <div class="col-md-6 col-lg-7">
+          <div class="col-md-6 col-lg-7 pic ">
             <!--image column-->
             <picture>
               <source srcset="img/Health_savvy/Health_Savvy_Project@1x.jpg" media="(max-width:750px)">
@@ -86,7 +98,7 @@
         <!--end of green-->
         <!--Start of Second project-->
         <div  class="row">
-          <div class="col-md-6 col-lg-7">
+          <div class="col-md-6 col-lg-7 pic">
             <!--image column-->
             <picture>
               <source srcset="img/Price_Pixel/PricePixel_Project@1x.jpg" media="(max-width:750px)">
@@ -1103,6 +1115,8 @@
     </div>
     <p>Copyright Debadutta Sahoo 2020</p>
   </footer>
+  <script src="js/jquery-3.5.1.min.js"></script>
+
   <script src="js/scripts.js"></script>
 
 </body>
