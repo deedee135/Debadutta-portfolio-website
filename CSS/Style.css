@@ -53,13 +53,17 @@ footer {
 
 .home {
   background-color: #ffffff;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
 }
 
 #hero {
-padding-bottom: 40px;
-  background-color: #E0E9F5;
+padding-bottom: 20px;
+background-color: #D9E3F1;
+
 }
+
+
+
 #hero h2{
   color: #720B98;
   text-align: center;
@@ -104,7 +108,7 @@ padding-bottom: 40px;
 
 nav>ul {
   list-style-type: none;
-  padding: 0;
+ margin: 1 em 0;
 }
 
 
@@ -114,7 +118,7 @@ nav>ul>li>a {
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 700;
-  color: #ffedff;
+  color: #720B98;
 }
 
 nav>ul>li>a:visited {
@@ -127,6 +131,9 @@ nav>ul>li>a:hover {
 
 nav>ul>li>a:active {
   color: #720B98;
+}
+.navtoggle li:not(:last-child) {
+  display: none;
 }
 .navtoggle, .navtoggle.responsive {
   position: relative;
@@ -374,28 +381,39 @@ a:active {
   border-bottom: 5px solid #4E4351;
   padding-bottom: 10px;
 }
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
 
 /* ==============================
 small devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
+
   header {
     text-align: unset;
     padding: 20px 0 13px;
   }
 
   nav {
-
     width: auto;
     float: right margin-top: 4px;
   }
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+nav>ul>li {
+  display: inline-block;
+}
 
-  .navtoggle li:not(:last-child) {
-    display: none;
-  }
-  .navtoggle li:not(:last-child) {
-    display: inline-block;
-  }
+
 
 
   [class*="col-"] {
@@ -423,9 +441,7 @@ MediumISH devices (900px and larger)
   .row-skills {
     text-align: center;
   }
-  .navtoggle li:last-child {
-  display: none;
-}
+
 
   .cols-skills, .cols-tools, .cols-others {
     width: 250px;
@@ -437,6 +453,7 @@ MediumISH devices (900px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+
   .col-lg-8 {
     width: 60%;
   }
@@ -452,18 +469,16 @@ Large devices (1024px or larger)
   .col-lg-4 {
     width: 40%;
   }
-  .navtoggle li:last-child {
-  display: none;
-}
+
+
 }
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
-  .navtoggle li:last-child {
-  display: none;
-}
+
+
 }
 
 /*================================

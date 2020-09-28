@@ -12,7 +12,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,500;1,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-
+  <script
+    src="https://kit.fontawesome.com/7a864958f2.js"
+    crossorigin="anonymous"
+  ></script>
 
   <title>Debadutta Sahoo UI/UX designer</title>
 </head>
@@ -24,18 +27,21 @@
   <!-- Start of header-->
   <header class="home" id="home">
     <div>
+      <div class="navtoggle" id="myNavtoggle">
+
       <a href="index.html">
-
-        <img id="logo" src="img/logo.svg" alt="Debadutta">
-
+      <img id="logo" src="img/logo.svg" alt="Debadutta">
       </a>
       <nav>
         <ul>
           <li> <a href="index.html">Work</a></li>
           <li> <a href="about.html">About</a></li>
           <li> <a href="#contact">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
+
         </ul>
       </nav>
+    </div>
     </div>
   </header>
   <!--End of header-->
@@ -425,10 +431,9 @@
     <p>Copyright Debadutta Sahoo 2020</p>
   </footer>
 
-  <body>
-    <script>
-      alert("Hello");
-    </script>
-  </body>
+  <script src="js/scripts.js"></script>
+
+
+</body>
 
 </html>
