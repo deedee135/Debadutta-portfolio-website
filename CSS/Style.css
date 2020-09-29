@@ -12,13 +12,13 @@ font-family: 'Montserrat', sans-serif;
 }
 
 main {
-  padding-top: 100px;
+  padding-top: 40px;
 }
 
 header {
 
   text-align: unset;
-  padding: 7px 0;
+
   position: fixed;
   top: 0;
   left: 0;
@@ -53,7 +53,7 @@ footer {
 
 .home {
   background-color: #ffffff;
-  padding-bottom: 25px;
+padding:10px 0;
 }
 
 #hero {
@@ -106,10 +106,7 @@ background-color: #D9E3F1;
   display: table;
 }
 
-nav>ul {
-  list-style-type: none;
- margin: 1 em 0;
-}
+
 
 
 
@@ -132,17 +129,58 @@ nav>ul>li>a:hover {
 nav>ul>li>a:active {
   color: #720B98;
 }
-.navtoggle li:not(:last-child) {
-  display: none;
-}
-.navtoggle, .navtoggle.responsive {
-  position: relative;
-}
+
+
 
 nav {
   width: auto;
   float: right;
+  padding-right: 135px;
   margin-top: 4px;
+}
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  margin-top: 0;
+  font-size: 20px;
+  margin-right:15px;
+}
+
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+
+display: block;
+  text-align:center;
+    text-transform:uppercase;
+    letter-spacing:5px;
+    font-size:1.25rem;
+
+  border-top:1px solid rgba(114, 11, 152, .2);
+
+}
+
+
+.menuitems:hover::after {
+    width:100%;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+nav>ul {
+  list-style-type: none;
+ margin: 1 em 0;
 }
 
 #work .pic{
@@ -215,9 +253,10 @@ img.auto {
 }
 
 #logo {
-  width: 82px;
-  height: 53px;
-  padding: 0 15px;
+  width: 49px;
+  height: 32px;
+margin-top: 20px;
+  margin-left:15px;
 }
 
 a {
@@ -324,7 +363,8 @@ a:active {
   color: #720B98;
   font-weight: 500;
   text-align: center;
-  padding-bottom: 50px;
+  padding-top: 80px;
+  padding-bottom: 20px;
   max-width: 800px;
   display: block;
   margin-left: auto;
@@ -333,7 +373,7 @@ a:active {
 
 #about h3 span {
   border-bottom: 5px solid #4E4351;
-  padding: 15px;
+  padding top: 15px;
 }
 
 .row-skills ul {
@@ -381,16 +421,8 @@ a:active {
   border-bottom: 5px solid #4E4351;
   padding-bottom: 10px;
 }
-.navtoggle li:not(:last-child) {
-  display: none;
-}
 
-.navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 2px;
-  font-size: 20px;
-}
+
 
 /* ==============================
 small devices (640px and larger)
@@ -401,10 +433,16 @@ small devices (640px and larger)
     text-align: unset;
     padding: 20px 0 13px;
   }
+#logo{
+    width: 82px;
+    height: 53px;
+padding:0 10px;
+    margin-left:135px;
 
+}
   nav {
     width: auto;
-    float: right margin-top: 4px;
+    float: right margin-top: 10px;
   }
   .navtoggle li:not(:last-child) {
   display: inline-block;
@@ -413,7 +451,12 @@ nav>ul>li {
   display: inline-block;
 }
 
-
+.navtoggle li:last-child {
+  display: none;
+}
+nav > ul {
+  margin: 1em 0;
+}
 
 
   [class*="col-"] {
