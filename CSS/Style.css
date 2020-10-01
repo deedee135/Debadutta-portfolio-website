@@ -12,20 +12,17 @@ font-family: 'Montserrat', sans-serif;
 }
 
 main {
-  padding-top: 40px;
+  padding-top: 80px;
 }
 
 header {
-
   text-align: unset;
-
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   box-shadow: 0 12px 12px 0 rgba(0, 0, 0, .2);
 }
-
 
 body {
   background-color: #ffffff;
@@ -37,7 +34,6 @@ body {
 }
 
 footer {
-
   text-align: center;
   padding: 12px 0;
   margin: 12px;
@@ -53,25 +49,27 @@ footer {
 
 .home {
   background-color: #ffffff;
-padding:10px 0;
+  padding: 10px 0;
 }
 
-#hero {
-padding-bottom: 20px;
-background-color: #D9E3F1;
+.hero {
+  padding-bottom: 20px;
+}
+/*.section{
+  height: 670px;
+}*/
 
+#hero h3 {
+  color: White;
 }
 
-
-
-#hero h2{
-  color: #720B98;
+#hero h2 {
+  color: White;
   text-align: center;
   padding-top: 50px;
 }
 
-
-.description{
+.description {
   font-family: Montserrat;
   font-size: 24px;
   color: #000000;
@@ -106,10 +104,6 @@ background-color: #D9E3F1;
   display: table;
 }
 
-
-
-
-
 nav>ul>li>a {
   padding: 0 6px;
   text-transform: uppercase;
@@ -130,63 +124,69 @@ nav>ul>li>a:active {
   color: #720B98;
 }
 
-
-
 nav {
   width: auto;
   float: right;
   padding-right: 135px;
   margin-top: 4px;
 }
+
 .navtoggle li:not(:last-child) {
   display: none;
 }
+
 .navtoggle,
 .navtoggle.responsive {
   position: relative;
 }
+
 .navtoggle li .icon {
   position: absolute;
   right: 0;
   margin-top: 0;
   font-size: 20px;
-  margin-right:15px;
+  margin-right: 15px;
 }
-
 
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
 
 .navtoggle.responsive li {
-
-display: block;
-  text-align:center;
-    text-transform:uppercase;
-    letter-spacing:5px;
-    font-size:1.25rem;
-
-  border-top:1px solid rgba(114, 11, 152, .2);
-
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 1.25rem;
+  border-top: 1px solid rgba(114, 11, 152, .2);
 }
 
-
 .menuitems:hover::after {
-    width:100%;
+  width: 100%;
 }
 
 .navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
+
 nav>ul {
   list-style-type: none;
- margin: 1 em 0;
+  margin: 1 em 0;
 }
 
-#work .pic{
-
+#work .pic {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
+#work .pic {
+  transition: 1s ease;
+}
+
+#work .pic:hover {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: 1s ease;
 }
 
 .col-md-6 h4 {
@@ -241,7 +241,12 @@ p {
 
 #work h4 {
   font-size: 1.5em;
-  margin-top: 0;
+  color: #720B98;
+  border-left: solid 6px #720B98;
+  border-radius: 30px;
+  letter-spacing: 2px;
+  padding: 10px;
+  background-color: rgba(114, 11, 152, .1)
 }
 
 img {
@@ -255,8 +260,8 @@ img.auto {
 #logo {
   width: 49px;
   height: 32px;
-margin-top: 20px;
-  margin-left:15px;
+  margin-top: 20px;
+  margin-left: 15px;
 }
 
 a {
@@ -325,7 +330,7 @@ a:active {
   background-color: #720B98;
   /* Green */
   color: white;
-  animation: bounce 1s;
+  animation: bounce 4s;
 }
 
 .button1 {
@@ -347,7 +352,8 @@ a:active {
   animation: bounce 1s;
   opacity: .8;
 }
-.resume{
+
+.resume {
   text-align: center;
 }
 
@@ -422,42 +428,111 @@ a:active {
   padding-bottom: 10px;
 }
 
+.row-vertical-centered {
+  margin-bottom: 80px;
+}
+
+.pic-padding {
+  padding-bottom: 50px;
+}
+
+.pic-padding1 {
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+#hero {
+  background: linear-gradient(90deg, #7D009E, #Fffff8);
+  animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  50% {
+    filter: hue-rotate(360deg);
+  }
+
+  100% {
+    filter: hue-rotate(0deg);
+  }
+}
+
+#hero::before {
+  content: '';
+  position: absolute;
+
+  border-top: 100vh solid transparent;
+  border-left: 100vh solid #fff;
+  opacity: 0.1;
+}
+
+#hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-top: 100vh solid transparent;
+  border-right: 100vh solid #Fffff8;
+  opacity: 0.1;
+}
+
+
+
 
 
 /* ==============================
 small devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 641px) {
+  main {
+    padding-top: 100px;
+  }
+  #hero h2 {
+    font-size: 2.5em;
+  }
 
   header {
     text-align: unset;
     padding: 20px 0 13px;
   }
-#logo{
+  #hero{
+    height:700px;
+  }
+
+  #logo {
     width: 82px;
     height: 53px;
-padding:0 10px;
-    margin-left:135px;
+    padding: 0 10px;``
+    margin-left: 135px;
+  }
 
-}
+  #work h4 {
+    margin-top: 0;
+  }
+
   nav {
     width: auto;
     float: right margin-top: 10px;
   }
+
   .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-nav>ul>li {
-  display: inline-block;
-}
+    display: inline-block;
+  }
 
-.navtoggle li:last-child {
-  display: none;
-}
-nav > ul {
-  margin: 1em 0;
-}
+  nav>ul>li {
+    display: inline-block;
+  }
 
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  nav>ul {
+    margin: 1em 0;
+  }
 
   [class*="col-"] {
     float: left;
@@ -475,6 +550,105 @@ nav > ul {
   .col-persona {
     width: 50%;
   }
+
+  .row-vertical-centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .row-hero {
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pic-padding {
+    padding-bottom: 100px;
+  }
+
+  .pic-padding1 {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+  /*scroll mouse icon animation*/
+
+  .mouse-icon {
+  border: 2px solid #ffffff;
+  border-radius: 16px;
+  height: 40px;
+  width: 24px;
+  display: block;
+  z-index: 10;
+  opacity: 0.7;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mouse-icon .wheel {
+  -webkit-animation-name: drop;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+  -webkit-animation-name: drop;
+          animation-name: drop;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+.mouse-icon .wheel {
+  position: relative;
+  border-radius: 10px;
+  background: #ffffff;
+  width: 2px;
+  height: 6px;
+  top: 4px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@-webkit-keyframes drop {
+  0% {
+    top: 5px;
+    opacity: 0;
+  }
+  30% {
+    top: 10px;
+    opacity: 1;
+  }
+  100% {
+    top: 25px;
+    opacity: 0;
+  }
+}
+@keyframes drop {
+  0% {
+    top: 5px;
+    opacity: 0;
+  }
+  30% {
+    top: 10px;
+    opacity: 1;
+  }
+  100% {
+    top: 25px;
+    opacity: 0;
+  }
+}
 }
 
 /* ==============================
@@ -484,7 +658,6 @@ MediumISH devices (900px and larger)
   .row-skills {
     text-align: center;
   }
-
 
   .cols-skills, .cols-tools, .cols-others {
     width: 250px;
@@ -496,7 +669,6 @@ MediumISH devices (900px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-
   .col-lg-8 {
     width: 60%;
   }
@@ -512,22 +684,16 @@ Large devices (1024px or larger)
   .col-lg-4 {
     width: 40%;
   }
-
-
 }
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-
-
-}
+@media only screen and (min-width: 1200px) {}
 
 /*================================
 CSS Animation
 ======================================*/
-
 @keyframes color-change {
   from {
     fill: #edc655;
