@@ -40,7 +40,7 @@ footer {
 }
 
 .border {
-  border-top: 1px solid rgba(125, 0, 158, .5);
+  border-top: 2px solid rgba(125, 0, 158, .5);
   width: 70%;
   display: block;
   margin-left: auto;
